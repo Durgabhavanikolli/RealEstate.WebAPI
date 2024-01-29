@@ -9,7 +9,7 @@ using System.Net;
 
 [ApiController]
 [Route("api/[controller]")]
-//[Authorize(Policy = "AdminOnly")]
+[Authorize(Policy = "AdminOnly")]
 [ProducesResponseType((int)HttpStatusCode.OK)]
 [ProducesResponseType((int)HttpStatusCode.BadRequest)]
 [ProducesResponseType((int)HttpStatusCode.Unauthorized)]
